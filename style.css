@@ -1,0 +1,72 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.stopwatch-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stopwatch {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#display {
+  font-size: 4em;
+  margin-bottom: 20px;
+  color: #444;
+  font-weight: bold;
+}
+
+.controls button {
+  font-size: 1.2em;
+  margin: 0 10px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  background-color: #bbb;
+  color: #444;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.controls button:hover {
+  background-color: #999;
+}
+
+.controls button:active {
+  background-color: #777;
+}
+#lapDisplayContainer {
+  max-height: 200px;
+  overflow-y: auto;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  margin: 0 auto;
+}
+
+#lapDisplayContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#lapDisplayContainer > div {
+  font-size: 1.2em;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  width: calc(100% - 20px);
+}
+
+#lapDisplayContainer > div:hover {
+  background-color: #f5f5f5;
+}
